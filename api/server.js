@@ -24,4 +24,34 @@ app.get('/todos', async (req, res) => {
     res.json(todos);
 });
 
-app.listen(3001, () => console.log("Server started at port 3001"));
+app.post('/todo/new', (req, res) => {
+  const todo = new Todo({
+    text: req.body.text
+  });
+
+  todo.save();
+
+  res.json(todo);
+
+});
+
+
+app.delete('/todo/delete/:id', async (req, res) => {
+  const result = await Todo.findByIdAndDelete(req.params.id);
+
+  res.json(result);
+});
+
+app.put('todo/complete/:id', async (req, res) => {
+  const todo =  await Todo.findById(req.params.id);
+
+  todo.complete = !todo.complete;
+
+  todo.save();
+
+  res.json(todo);
+})
+
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Server started at port ${port}`));
