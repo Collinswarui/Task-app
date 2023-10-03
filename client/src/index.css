@@ -26,14 +26,22 @@ h1{
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 32px;
+    color: var(--light-alt);
 }
 h4{
     font-size: 18px;
     color: var(--light-alt);
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 700;
     margin-bottom: 16px;
     text-align: center;
+}
+p {
+    font-size: 14px;
+    color: var(--light-alt);
+    font-weight: 700;
+    margin-bottom: 16px;
+   
 }
 
 .todo{
@@ -79,9 +87,10 @@ h4{
     top: 50%;
     right: 16px;
     transform: translateY(-50%);
+    font-weight: bolder;
 
     width: 26px;
-    height: 24px;
+    height: 26px;
     color: var(--light);
     background-color: #AF1E2D;
     border-radius: 50%;
@@ -108,4 +117,71 @@ h4{
     background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
     color: var(--light);
     cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--light);
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 24px var(--dark);
+}
+
+.closePopup{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    height: 20px;
+    width: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    color: var(--light);
+    border-radius: 50%;
+
+}
+
+.popup h3 {
+    color: var(--dark);
+    margin-bottom: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.add-todo-input {
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color: #FFF;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    font-size: 20px;
+}
+
+.button {
+    padding: 16px 32px;
+	border-radius: 999px;
+	background-image: linear-gradient(to right, var(--primary), var(--secondary));
+	display: inline-block;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-top: 16px;
+	text-align: center;
+	cursor: pointer;
+    color: #FFF;
+    border: none;
 }
