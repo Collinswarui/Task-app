@@ -44,16 +44,24 @@ p {
    
 }
 
+.todos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .todo{
     position: relative;
     background-color: var(--dark);
     padding: 16px;
     border-radius: 16px;
     display: flex;
+    height: 88px;
+    
+
     align-items: center;
     transition: 0.5s;
     cursor: pointer;
-    margin-bottom: 16px;
+    margin: 16px;
 }
 
 .todo:hover{
@@ -85,9 +93,10 @@ p {
 .todo .delete_todo {
     position: absolute;
     top: 50%;
-    right: 16px;
+    right: 10px;
     transform: translateY(-50%);
     font-weight: bolder;
+    margin: 7px;
 
     width: 26px;
     height: 26px;
@@ -102,7 +111,7 @@ p {
 
 .addPopup {
     position: fixed;
-    bottom: 32px;
+    bottom: 92px;
     right: 32px;
     display: flex;
     align-items: center;
@@ -123,7 +132,7 @@ p {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
 
     width: 100%;
     max-width: 400px;
