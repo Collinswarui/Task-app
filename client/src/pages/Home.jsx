@@ -65,23 +65,21 @@ export const Home = () => {
       <h1>Welcome To Wakori's task Application</h1>
       <h4>These are your tasks</h4>
 
-      <div className='todos'>
-        {todos.length > 0 ? todos.map(todo => (
-                <div className={
-                  "todo" + (todo.complete ? "is-complete" : "")
-                } key={todo._id} onClick={() => completeTodo(todo._id)}>
-                  <div className='checkbox'></div>
+      <div className="todos">
+				{todos.length > 0 ? todos.map(todo => (
+					<div className={
+						"todo" + (todo.complete ? " is-complete" : "")
+					} key={todo._id} onClick={() => completeTodo(todo._id)}>
+						<div className="checkbox"></div>
 
-                  <div className='text'>{todo.text}</div>
+						<div className="text">{todo.text}</div>
 
-                  <div className='delete_todo' onClick={() => deleteTodo
-                  (todo._id)}>X</div>
-                </div>
-        )) : (
-          <p>You currently have no tasks</p>
-        )}
-
-      </div>
+						<div className="delete_todo" onClick={() => deleteTodo(todo._id)}>x</div>
+					</div>
+				)) : (
+					<p>You currently have no tasks</p>
+				)}
+			</div>
       <div className='addPopup' onClick={() => setpopupActive(true)}>+</div>
       {popupActive ? (
           <div className='popup'>

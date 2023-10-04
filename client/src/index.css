@@ -61,7 +61,7 @@ p {
     align-items: center;
     transition: 0.5s;
     cursor: pointer;
-    margin: 16px;
+    margin: 16px 16px 50px 16px;
 }
 
 .todo:hover{
@@ -96,7 +96,7 @@ p {
     right: 10px;
     transform: translateY(-50%);
     font-weight: bolder;
-    margin: 7px;
+    
 
     width: 26px;
     height: 26px;
@@ -193,4 +193,45 @@ p {
 	cursor: pointer;
     color: #FFF;
     border: none;
+}
+
+@media (max-width: 768px) {
+    /* Responsive styles for tablets */
+    h1 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .todos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .todo .delete_todo {
+        right: 7px;
+        margin: 5px;
+        
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* responsive styles for mobile devices */
+
+    h1 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .todos {
+        grid-template-columns: 1fr;
+    }
+
+    .popup {
+        width: 80%;
+    }
 }
