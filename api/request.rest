@@ -3,7 +3,7 @@ GET http://localhost:3000/todos
 
 ###
 
-POST http://localhost:3000/todo/new
+POST http://localhost:3001/todo/new
 Content-Type: application/json
 
 {
@@ -15,10 +15,5 @@ DELETE http://localhost:3000/todo/delete/651a8fd92c61be5b9973aa0f
 
 ###
 
-PUT http://localhost:3000/todo/complete/651a8224143fc911d54171fe
+GET http://localhost:3001/todo/complete/651d661cc162829a0c3d96e8
 
-Content-Type: application/json
-
-{
-    "text": "Get sugar "
-}
