@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 
-const API_BASE = "http://localhost:3001";
+const API_BASE = "https://task-backend-43vh.onrender.com";
 
 export const Home = () => {
   
