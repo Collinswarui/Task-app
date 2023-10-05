@@ -1,9 +1,9 @@
-GET http://localhost:3000/todos
+GET https://task-backend-43vh.onrender.com/todos
 
 
 ###
 
-POST http://localhost:3001/todo/new
+POST https://task-backend-43vh.onrender.com/todo/new
 Content-Type: application/json
 
 {
@@ -11,9 +11,9 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3001/todo/delete/651e68afed8da65871c57105
+DELETE https://task-backend-43vh.onrender.com/todo/delete/
 
 ###
 
-GET http://localhost:3001/todo/complete/651d661cc162829a0c3d96e8
+GET https://task-backend-43vh.onrender.com/todo/complete/
 
