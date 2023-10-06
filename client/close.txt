@@ -1,0 +1,4 @@
+Migrated the project on to live environment. 
+Hosted both the frontend and the backend on render.com.
+Incase of any updates will keep it posted.
+The project took approximately two weeks to complete.
