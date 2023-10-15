@@ -1,4 +1,4 @@
-GET https://task-backend-43vh.onrender.com/todos
+GET https://rentalmanagement-9g1a.onrender.com/estates
 
 
 ###
@@ -7,7 +7,8 @@ POST https://task-backend-43vh.onrender.com/todo/new
 Content-Type: application/json
 
 {
-    "text": "Get the milk"
+    "text": "Get the milk",
+    "text": "Get bread"
 }
 
 ###
@@ -15,5 +16,5 @@ DELETE https://task-backend-43vh.onrender.com/todo/delete/
 
 ###
 
-GET https://task-backend-43vh.onrender.com/todo/complete/
+GET https://task-backend-43vh.onrender.com/todo/complete/65205e50763d8b8dc59cc0b8
 
